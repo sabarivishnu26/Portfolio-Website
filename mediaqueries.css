@@ -36,6 +36,12 @@
     .about-containers{
         margin-top: 0;
     }
+    .experience-grid{
+        grid-template-columns: 1fr;
+}
+    #projects .about-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
 
 }
 
@@ -94,4 +100,10 @@
     .text-container{
         text-align: justify;
     }
+    .article-container{
+    grid-template-columns: 1fr;
+    }
+    #projects .about-container{
+    grid-template-columns: 1fr;
+  }
 }

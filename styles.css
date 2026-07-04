@@ -239,9 +239,10 @@ section {
 
 .section-container{
   display: flex;
-  gap: 4rem;
+  justify-content: center;
   height: 80%;
 }
+
 
 .section__pic-container{
   height: 400px;
@@ -249,10 +250,12 @@ section {
   margin: auto 0;
 }
 
-.about-details-container{
+.about-detail-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 750px;
+  width: 100%;
 }
 
 .about-container{
@@ -261,6 +264,46 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+
+.text-container{
+  margin-bottom: 2rem;
+}
+
+.cert-container{
+  margin-top: 1rem;
+}
+
+.cert-title{
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.cert-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.cert-item{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  background: rgb(250,250,250);
+  border-radius: 1.5rem;
+  border: rgb(163,163,163) 0.1rem solid;
+}
+
+.cert-badge{
+  height: 3rem;
+  width: 3rem;
+  object-fit: contain;
+}
+
+.cert-item p{
+  font-weight: 500;
+  font-size: 0.95rem;
 }
 
 .about-pic{
@@ -300,21 +343,51 @@ section {
   flex-direction: column;
 }
 
-.article-container{
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
+.experience-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  justify-content: space-around;
-  
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.details-container{
+  padding: 1.5rem 2rem;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53,53,53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
 }
 
 article{
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  align-items: center;
+  width: auto;
+  justify-content: flex-start;
+  gap: 0.75rem;
+}
+
+article h3{
+  font-size: 1.1rem;
+}
+
+article p{
+  font-size: 0.9rem;
+}
+
+.article-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 1rem;
+  text-align: initial;
+}
+
+article{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  width: auto;
 }
 
 article .icon{
@@ -344,6 +417,13 @@ article .icon{
 .project-btn{
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.more-projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 #contact{
